@@ -4,7 +4,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t viliuxaaa/docker-react -f Fockerfile.dev .
+  - docker build -t viliuxaaa/docker-react -f Dockerfile.dev .
 
 script:
   - docker run -e CI=true viliuxaaa/docker-react npm run test
